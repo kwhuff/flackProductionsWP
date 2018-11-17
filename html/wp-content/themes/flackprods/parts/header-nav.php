@@ -7,9 +7,11 @@
 
 $nav_links     = get_wp_nav_items_by_theme_location( 'header_menu' );
 $hero_included = get_field( INCLUDE_HERO );
+$mini_hero     = get_field( MINI_HERO );
+
 ?>
 
-<header class="header-nav-container">
+<header class="header-nav-container <?php if( !$mini_hero ) : ?>hero-margin-bottom <?php else : ?>mini-hero-margin-bottom<?php endif ?>">
 	<nav class="grid-x mobile-vertical-align sub-menu-container hide-for-large mobile-nav-only align-center">
 		<div class="cell small-6 padding-bottom-1 padding-top-1 padding-left-1">
 			<img src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="KKMI Logo">
@@ -39,7 +41,7 @@ $hero_included = get_field( INCLUDE_HERO );
 		</div>
 	</nav>
 	<div class="grid-container-fluid">
-		<nav class="grid-x show-for-large desktop-nav-only<?php if( $hero_included === false) : ?> color-background<?php endif ?>" >
+		<nav class="grid-x show-for-large desktop-nav-only<?php if ( $hero_included === false ) : ?> color-background<?php endif ?>">
 			<div class="cell small-3 desktop-header-logo text-center">
 				<img class="desktop-header-image" src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Creative Video">
 			</div>

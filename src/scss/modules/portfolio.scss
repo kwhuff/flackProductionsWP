@@ -1,0 +1,15 @@
+.portfolio-styling {
+
+	font-family: $body-font-family;
+
+	.video-thumbnail {
+		height: rem-calc(200);
+		margin: rem-calc(10);
+		background-position: center;
+		box-shadow: 1px 1px 5px $primary inset;
+	}
+
+	.video-title {
+		margin: rem-calc(15);
+	}
+}

@@ -13,3 +13,6 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 require_once __DIR__ . '/../acf/modules.php';
 
 ACFModuleLoader::register();
+
+//Load ACF Modules.
+ACFModuleLoader::registerSubModule( new Portfolio() );

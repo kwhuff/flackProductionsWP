@@ -19,3 +19,8 @@ require_once __DIR__ . '/ACFSubmodule.php';
 require_once __DIR__ . '/fields.php';
 require_once __DIR__ . '/fields/hero-fields.php';
 
+/**
+ * Submodules
+ */
+require_once __DIR__ . '/submodules/class-portfolio.php';
+

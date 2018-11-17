@@ -1,7 +1,14 @@
 .header-nav-container {
-	@include breakpoint(large up) {
-		margin-bottom: rem-calc(480);
-	}
+	//@include breakpoint(large up) {
+	//
+	//	.hero-margin-bottom {
+	//		margin-bottom: rem-calc(480);
+	//	}
+	//
+	//	.mini-hero-margin-bottom {
+	//		margin-bottom: rem-calc(400);
+	//	}
+	//}
 
 	font-family: $body-font-family;
 
@@ -101,4 +108,14 @@
 		background: $blue;
 	}
 
+}
+@include breakpoint(large up) {
+
+	.header-nav-container.hero-margin-bottom {
+		margin-bottom: rem-calc(480);
+	}
+
+	.header-nav-container.mini-hero-margin-bottom {
+		margin-bottom: rem-calc(350);
+	}
 }
