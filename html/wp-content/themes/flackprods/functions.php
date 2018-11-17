@@ -10,3 +10,6 @@ require('inc/register-post-types.php');
 require('inc/register-acf-modules.php');
 require('inc/enqueue-scripts.php');
 require('inc/helper-functions.php');
+
+//Local fields
+require get_template_directory() . '/inc/customizer.php';

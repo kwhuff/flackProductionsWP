@@ -71,3 +71,5 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php require locate_template( 'parts/header-nav.php' ); ?>

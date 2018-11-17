@@ -4,11 +4,12 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        themeName: 'ignition',
+        themeName: 'flackprods',
         path: {
             template: 'html/wp-content/themes/<%= themeName %>',
             appJS: '<%= path.template %>/javascripts/app.js',
             appCSS: '<%= path.template %>/css/app.css',
+            fonts: '<%= path.template %>/fonts/',
         },
 
         browserify: {
@@ -25,7 +26,10 @@ module.exports = function(grunt) {
 
         sass: {
             options: {
-                sourceMap: true, includePaths: ['node_modules/foundation-sites/scss'],
+                sourceMap: true, includePaths: [
+                    'node_modules/foundation-sites/scss',
+                    'node_modules/@fortawesome/fontawesome-free/scss',
+                ],
             }, dist: {
                 files: {
                     '<%= path.template %>/css/app.css': 'src/scss/app.scss',

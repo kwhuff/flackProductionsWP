@@ -1,0 +1,37 @@
+.page-hero {
+	color: $white;
+
+	.hero-container {
+		background-size: cover;
+		height: rem-calc(300);
+		padding: rem-calc(20 0);
+		display: flex;
+		align-items: center;
+
+		@include breakpoint(medium up) {
+			padding: rem-calc(85 0);
+			width: 100%;
+			top: 0;
+			z-index: -10;
+			height: rem-calc(620);
+		}
+
+		@include breakpoint(large up) {
+			position: absolute;
+		}
+	}
+
+	h3 {
+		font-family: $body-font-family;
+		text-align: center;
+		color: $white;
+		margin: 0 rem-calc(35);
+		font-size: rem-calc(30);
+
+		@include breakpoint(medium up) {
+			margin: rem-calc(130) rem-calc(60) 0 rem-calc(60);
+			line-height: rem-calc(90);
+			font-size: rem-calc(64);
+		}
+	}
+}

@@ -30,3 +30,17 @@ function failed_login() {
 	return 'The login information you have entered is incorrect.';
 }
 add_filter( 'login_errors', 'failed_login' );
+
+/**
+ * Get nav items for the menu assigned to a theme location
+ *
+ * @param string $theme_location The Theme Location set by register_nav_menus().
+ *
+ * @return array
+ */
+function get_wp_nav_items_by_theme_location( $theme_location ) {
+	$theme_locations = get_nav_menu_locations();
+	$menu            = get_term( $theme_locations[ $theme_location ], 'nav_menu' );
+
+	return wp_get_nav_menu_items( $menu->name );
+}

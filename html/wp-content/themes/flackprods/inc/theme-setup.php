@@ -2,8 +2,7 @@
 
 register_nav_menus(
 	array(
-		'footer_menu_left'   => 'Footer Menu (Left)',
-		'footer_menu_center' => 'Footer Menu (Center)',
+		'header_menu' => __( 'Header Menu' ),
 	)
 );
 
