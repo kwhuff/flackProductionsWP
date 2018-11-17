@@ -6,6 +6,7 @@
  */
 
 $nav_links     = get_wp_nav_items_by_theme_location( 'header_menu' );
+$hero_included = get_field( INCLUDE_HERO );
 ?>
 
 <header class="header-nav-container">
@@ -18,8 +19,8 @@ $nav_links     = get_wp_nav_items_by_theme_location( 'header_menu' );
 		</div>
 		<div id="mobile-menu">
 			<div class="grid-x">
-				<div class="small-8 small-offset-2 padding-top-2 padding-horizontal-1 margin-top-1 margin-bottom-3">
-					<img src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Logo">
+				<div class="small-8 small-offset-2 padding-top-2 padding-horizontal-1 margin-top-1 margin-bottom-3 text-center">
+					<img src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Creative Video">
 				</div>
 				<?php foreach ( $nav_links as $link ) : ?>
 					<div class="small-12 text-center mobile-nav-link-wrapper">
@@ -38,9 +39,9 @@ $nav_links     = get_wp_nav_items_by_theme_location( 'header_menu' );
 		</div>
 	</nav>
 	<div class="grid-container-fluid">
-		<nav class="grid-x show-for-large desktop-nav-only padding-top-2 padding-bottom-2">
+		<nav class="grid-x show-for-large desktop-nav-only<?php if( $hero_included === false) : ?> color-background<?php endif ?>" >
 			<div class="cell small-3 desktop-header-logo text-center">
-				<img class="width-75 desktop-header-image" src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Logo">
+				<img class="desktop-header-image" src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Creative Video">
 			</div>
 			<div class="cell small-9 desktop-header-links float-right">
 				<ul class="menu float-right">

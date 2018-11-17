@@ -66,9 +66,8 @@ $fa-font-path: "../fonts";
 
 // flackprods
 @import "_settings";
-
 @import "parts/__base";
 @import "parts/__header";
 @import "parts/__footer";
 @import "parts/__header-nav.scss";
-//@import 'parts/__hero.scss';
+@import "parts/__hero.scss";

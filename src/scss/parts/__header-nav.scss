@@ -1,14 +1,21 @@
 .header-nav-container {
+	@include breakpoint(large up) {
+		margin-bottom: rem-calc(480);
+	}
 
 	font-family: $body-font-family;
 
 	a {
-		color: black;
+		color: $white;
 	}
 
 	.mobile-nav-only {
 		display: flex;
 		box-shadow: 0px 0px 25px grey;
+
+		img {
+			max-height: rem-calc(85);
+		}
 
 		.mobile-vertical-align {
 			align-items: center;
@@ -32,7 +39,9 @@
 			}
 
 			img {
-				border: 5px solid black;
+				border: 1px solid $primary;
+				max-height: rem-calc(100);
+				padding-top:rem-calc(1);
 			}
 		}
 
@@ -55,8 +64,10 @@
 
 	.desktop-nav-only {
 
+		background-color: rgba(0, 0, 0, 0.3);
 		display: flex;
 		align-items: center;
+
 		.desktop-nav-link {
 			font-size: 1.4vw;
 			margin: 0 rem-calc(22);
@@ -77,7 +88,7 @@
 		}
 
 		.desktop-header-image {
-			max-height: rem-calc(50);
+			max-height: rem-calc(150);
 		}
 	}
 
@@ -86,8 +97,8 @@
 		margin-right: rem-calc(22);
 	}
 
-	.blue-background {
-		background: $white;
+	.color-background {
+		background: $blue;
 	}
 
 }

@@ -17,4 +17,5 @@ require_once __DIR__ . '/ACFSubmodule.php';
  * Fields
  */
 require_once __DIR__ . '/fields.php';
+require_once __DIR__ . '/fields/hero-fields.php';
 

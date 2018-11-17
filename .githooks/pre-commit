@@ -1,10 +1,1 @@
 #!/bin/bash
-
-echo "Start Stylelint"
-./node_modules/.bin/stylelint src/scss  --config .stylelintrc
-
-echo "Start ESLint"
-./node_modules/.bin/eslint src/js --config .eslintrc.json
-
-echo "Start CodeSniffer"
-phpcs html/wp-content/themes/arbor --standard=Wordpress --extensions=php

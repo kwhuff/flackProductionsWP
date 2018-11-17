@@ -3,6 +3,7 @@
 
 	.hero-container {
 		background-size: cover;
+		background-position: center;
 		height: rem-calc(300);
 		padding: rem-calc(20 0);
 		display: flex;
@@ -13,11 +14,29 @@
 			width: 100%;
 			top: 0;
 			z-index: -10;
-			height: rem-calc(620);
+			height: rem-calc(850);
 		}
 
 		@include breakpoint(large up) {
 			position: absolute;
+		}
+	}
+
+	.mini-hero-container {
+
+		padding-bottom: 0;
+
+		@include breakpoint(medium up) {
+			height: rem-calc(500);
+		}
+
+		.mini-hero-text-styling {
+			align-self: flex-end;
+			margin-left: 0;
+			
+			 h3 {
+				 background: rgba(0, 0, 0, 0.5);
+			 }
 		}
 	}
 
