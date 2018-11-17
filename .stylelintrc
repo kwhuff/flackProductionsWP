@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-wordpress"],
+  "rules": {
+    "no-eol-whitespace": [
+      true,
+      {
+        ignore: ["empty-lines"]
+      }
+    ],
+    "at-rule-no-unknown": null
+  }
+}

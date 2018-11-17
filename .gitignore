@@ -1,0 +1,35 @@
+.vagrant/
+latest.tar.gz
+html/*.tar.gz
+Gemfile.lock
+node_modules/
+bower_components/
+.sass-cache/
+html/*.log
+html/.htaccess
+html/sitemap.xml
+html/sitemap.xml.gz
+js/bin/
+.idea/
+
+.DS_Store
+
+config/local.php
+
+html/wp-content/advanced-cache.php
+html/wp-content/backup-db/
+html/wp-content/backups/
+html/wp-content/blogs.dir/
+html/wp-content/cache/
+html/wp-content/upgrade/
+html/wordpress/wp-content/
+html/wp-content/themes/**/css/**/*.css*
+html/wp-content/themes/**/javascripts/**/*.js*
+
+# Ignoring for now but we may want it enabled depending on the site
+html/wp-content/uploads/
+
+html/wp-content/wp-cache-config.php
+
+# Caleb and Jason use this as a symlink so they don't have to dig for the folder.
+/theme
