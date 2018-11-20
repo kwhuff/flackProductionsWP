@@ -23,4 +23,5 @@ require_once __DIR__ . '/fields/hero-fields.php';
  * Submodules
  */
 require_once __DIR__ . '/submodules/class-portfolio.php';
+require_once __DIR__ . '/submodules/class-wysiwyg.php';
 

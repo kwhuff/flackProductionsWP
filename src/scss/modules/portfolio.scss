@@ -9,7 +9,34 @@
 		box-shadow: 1px 1px 5px $primary inset;
 	}
 
+	.video-thumbnail:hover {
+		cursor: pointer;
+	}
+
 	.video-title {
 		margin: rem-calc(15);
+	}
+
+	#show-videos {
+		margin-bottom: rem-calc(10);
+	}
+
+	#show-videos:hover {
+		cursor: pointer;
+	}
+
+	#video-player-wrapper {
+		height: rem-calc(600);
+		display: none;
+		margin-bottom: rem-calc(50);
+	}
+
+	#video-player-wrapper iframe {
+		width: 100% !important;
+		height: rem-calc(300) !important;
+
+		@include breakpoint (medium up) {
+			height: 100% !important;
+		}
 	}
 }

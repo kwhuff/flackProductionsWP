@@ -1,1 +1,12 @@
 /* stylelint-disable-next-line no-empty-source */
+footer {
+	margin-top: rem-calc(50);
+	height: rem-calc(80);
+	width: 100%;
+	background: black;
+	color: white;
+
+	.footer-icons > a {
+		color: white;
+	}
+}
