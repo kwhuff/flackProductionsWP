@@ -17,3 +17,5 @@ ACFModuleLoader::register();
 //Load ACF Modules.
 ACFModuleLoader::registerSubModule( new Portfolio() );
 ACFModuleLoader::registerSubModule( new WYSIWYG() );
+ACFModuleLoader::registerSubModule( new Contact() );
+

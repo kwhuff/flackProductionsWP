@@ -6,8 +6,6 @@
  */
 
 $videos = get_sub_field(Portfolio::VIDEO);
-//var_dump($videos[0]);
-//var_dump($videos[0]['video_url'])
 ?>
 
 <div class="grid-container portfolio-styling">

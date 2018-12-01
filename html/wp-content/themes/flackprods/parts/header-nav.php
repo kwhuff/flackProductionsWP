@@ -14,7 +14,7 @@ $mini_hero     = get_field( MINI_HERO );
 <header class="header-nav-container <?php if( !$mini_hero ) : ?>hero-margin-bottom <?php else : ?>mini-hero-margin-bottom<?php endif ?>">
 	<nav class="grid-x mobile-vertical-align sub-menu-container hide-for-large mobile-nav-only align-center">
 		<div class="cell small-6 padding-bottom-1 padding-top-1 padding-left-1">
-			<img src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="KKMI Logo">
+			<img src="<?php echo esc_url( get_theme_mod( HEADER_LOGO ) ); ?>" alt="Flack Productions Logo">
 		</div>
 		<div class="cell small-6 padding-1 float-right small align-self-middle">
 			<i id="mobile-menu-display" class="float-right fas fa-bars"></i>

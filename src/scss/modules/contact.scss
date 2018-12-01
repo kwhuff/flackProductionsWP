@@ -1,0 +1,13 @@
+.contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	a {
+		color: black !important;
+	}
+}
+
+.contact-info {
+	font-size: rem-calc(25);
+}
