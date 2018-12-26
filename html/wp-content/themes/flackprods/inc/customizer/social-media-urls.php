@@ -48,6 +48,16 @@ function social_media_urls_customize_register( $wp_customize ) {
 		array()
 	);
 
+	$wp_customize->add_setting(
+		YOUTUBE_SETTINGS,
+		array()
+	);
+
+	$wp_customize->add_setting(
+		VIMEO_SETTINGS,
+		array()
+	);
+
 	$wp_customize->add_control(
 		INSTAGRAM_URL,
 		array(

@@ -65,11 +65,11 @@ class Portfolio extends ACFSubmodule {
 				'collapsed'         => '',
 				'min'               => 0,
 				'max'               => 30,
-				'button_label'      => 'Add Section',
+				'button_label'      => 'Add Video',
 				'layout'            => 'row',
 				'sub_fields'        => array(
 					array(
-						'key'               => 'field_5b6c9ce577216',
+						'key'               => 'field_5b6c9ce571234',
 						'label'             => 'Video URL',
 						'name'              => 'video_url',
 						'type'              => 'text',

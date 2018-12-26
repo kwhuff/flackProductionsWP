@@ -26,7 +26,7 @@ $mini_hero     = get_field( MINI_HERO );
 				</div>
 				<?php foreach ( $nav_links as $link ) : ?>
 					<div class="small-12 text-center mobile-nav-link-wrapper">
-						<a class="mobile-nav-link" href="<?php echo esc_url( $link->url ); ?>"><?php echo $link->post_title; ?></a>
+						<a class="mobile-nav-link" href="<?php echo esc_url( $link->url ); ?>"><?php echo $link->title; ?></a>
 					</div>
 				<?php endforeach ?>
 				<div class="small-12 margin-bottom-1 position-fixed-bottom text-center">
@@ -49,7 +49,7 @@ $mini_hero     = get_field( MINI_HERO );
 				<ul class="menu float-right">
 					<?php foreach ( $nav_links as $link ) : ?>
 						<li class="desktop-nav-link">
-							<a href="<?php echo esc_url( $link->url ); ?>"><?php echo $link->post_title; ?></a></li>
+							<a href="<?php echo esc_url( $link->url ); ?>"><?php echo $link->title; ?></a></li>
 					<?php endforeach ?>
 				</ul>
 			</div>

@@ -25,4 +25,6 @@ require_once __DIR__ . '/fields/hero-fields.php';
 require_once __DIR__ . '/submodules/class-portfolio.php';
 require_once __DIR__ . '/submodules/class-wysiwyg.php';
 require_once __DIR__ . '/submodules/class-contact.php';
+require_once __DIR__ . '/submodules/class-package.php';
+require_once __DIR__ . '/submodules/class-extras.php';
 

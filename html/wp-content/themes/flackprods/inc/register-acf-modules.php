@@ -6,7 +6,6 @@
 if ( function_exists( 'acf_add_options_page' ) ) {
 	acf_add_options_page();
 }
-
 /**
  * ACF Module Setup
  */
@@ -18,4 +17,6 @@ ACFModuleLoader::register();
 ACFModuleLoader::registerSubModule( new Portfolio() );
 ACFModuleLoader::registerSubModule( new WYSIWYG() );
 ACFModuleLoader::registerSubModule( new Contact() );
+ACFModuleLoader::registerSubModule( new WeddingPackage() );
+ACFModuleLoader::registerSubModule( new Extras() );
 

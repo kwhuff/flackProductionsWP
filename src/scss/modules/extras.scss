@@ -1,0 +1,13 @@
+.extras-wrapper {
+	border: 1px solid lightgrey;
+	border-radius: rem-calc(15);
+	padding: rem-calc(20);
+}
+
+.disclaimer {
+	font-size: rem-calc(10);
+
+	p {
+		margin-bottom: 0 !important;
+	}
+}

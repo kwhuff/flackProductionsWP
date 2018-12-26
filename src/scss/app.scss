@@ -14,7 +14,7 @@ $fa-font-path: "../fonts";
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
-// @include foundation-grid;
+ @include foundation-grid;
 // @include foundation-flex-grid;
 
 // Generic components
@@ -75,3 +75,5 @@ $fa-font-path: "../fonts";
 //Modules
 @import "modules/portfolio.scss";
 @import "modules/contact.scss";
+@import "modules/package.scss";
+@import "modules/extras.scss";

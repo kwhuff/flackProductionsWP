@@ -126,5 +126,4 @@ class Contact extends ACFSubmodule {
 			),
 		);
 	}
-
 }
