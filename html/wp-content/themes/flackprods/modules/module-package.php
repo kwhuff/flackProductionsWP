@@ -10,7 +10,7 @@ $package_price = get_sub_field(WeddingPackage::PACKAGE_PRICE);
 $package_features = get_sub_field(WeddingPackage::PACKAGE_FEATURES);
 ?>
 
-<div class="grid-margin grid-container">
+<div class="grid-margin grid-container package-wrapper">
 	<h1><?php echo $package_title; ?></h1>
 	<ul class="no-bullet feature-list">
 <!--	<div class="feature-list grid-x">-->

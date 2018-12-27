@@ -53,10 +53,10 @@
 		}
 
 		#click-to-close {
+			top: rem-calc(20);
 			text-align: right;
 			position: absolute;
 			right: rem-calc(2);
-			top: rem-calc(-12);
 			font-size: rem-calc(25);
 			color: $primary;
 		}

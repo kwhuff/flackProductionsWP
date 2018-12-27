@@ -31,12 +31,17 @@
 			height: rem-calc(500);
 		}
 
-		.mini-hero-text-styling {
-			align-self: flex-end;
-
-			 h3 {
-				 background: rgba(0, 0, 0, 0.5);
-			 }
+		//.mini-hero-text-styling {
+		//	align-self: flex-end;
+		//
+		//	 h3 {
+		//		 background: rgba(0, 0, 0, 0.5);
+		//		 margin: 0 !important;
+		//	 }
+		//}
+		h3 {
+			margin: 0;
+			text-shadow: 1px 0.1px black;
 		}
 	}
 
@@ -46,6 +51,7 @@
 		color: $white;
 		margin: 0 rem-calc(35);
 		font-size: rem-calc(30);
+		text-shadow: 1px 0.1px black;
 
 		@include breakpoint(medium up) {
 			margin: rem-calc(130) rem-calc(60) 0 rem-calc(60);

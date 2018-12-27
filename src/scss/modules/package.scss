@@ -1,5 +1,6 @@
 .feature-list {
 	margin-left: rem-calc(50) !important;
+	padding-bottom: rem-calc(20);
 
 	.feature-text {
 		font-size: rem-calc(20);
@@ -15,4 +16,8 @@ h2 {
 
 .package-price {
 	float: right;
+}
+
+.package-wrapper {
+	padding-top: rem-calc(40);
 }

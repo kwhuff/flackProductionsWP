@@ -23,10 +23,10 @@
 				</div>
 			</div>
 		<?php else : ?>
-		<div class="mini-hero-text-styling">
-			<div class="grid-x">
+		<div class="grid-container">
+			<div class="grid-x grid-margin-x">
 				<div class="cell small-12">
-					<h3 class="mini-hero-text-styling"><?php echo $mini_hero_title ?></h3>
+					<h3><?php echo $mini_hero_title ?></h3>
 				</div>
 			</div>
 		</div>

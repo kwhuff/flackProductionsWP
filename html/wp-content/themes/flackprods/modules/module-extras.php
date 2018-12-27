@@ -17,7 +17,7 @@ $disclaimer = get_sub_field(Extras::DISCLAIMER);
 	<h2 class="text-center"><?php echo $extras_title; ?></h2>
 	<ul class="text-center no-bullet">
 		<?php foreach( $extra_features as $feature ) : ?>
-			<li class="feature-text">- <?php echo $feature['extra_feature'] ?></li>
+			<li class="feature-text"><?php echo $feature['extra_feature'] ?></li>
 		<?php endforeach ?>
 	</ul>
 	<div class="text-center disclaimer font-italic">
