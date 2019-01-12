@@ -11,7 +11,7 @@ $videos = get_sub_field(Portfolio::VIDEO);
 <div class="grid-container portfolio-styling">
 	<div class="grid-x text-center">
 		<?php foreach ($videos as $video ) : ?>
-			<div class="large-4 small-12 all-videos-wrapper">
+			<div class="large-4 medium-6 small-12 all-videos-wrapper">
 				<div class="video-thumbnail-wrapper">
 					<div data-attribute="<?php echo esc_html($video['video_url']); ?>" class="video-thumbnail" style="background-image:url('<?php echo $video['video_thumbnail']['url']; ?>')"></div>
 				</div>
