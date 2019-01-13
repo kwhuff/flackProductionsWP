@@ -104,6 +104,14 @@ $grey: #5d5b5b;
 $yellow: #e8b126;
 $primary: $grey;
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $body-font-family;
+}
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
