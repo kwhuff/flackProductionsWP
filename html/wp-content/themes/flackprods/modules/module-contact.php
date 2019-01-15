@@ -21,11 +21,11 @@ $phone_number = get_sub_field(Contact::PHONE_NUMBER);
 				<div><?php echo $name; ?></div>
 				<div><?php echo $phone_number; ?></div>
 				<div><?php echo $email; ?></div>
-				<a href="<?php echo esc_html( get_theme_mod( INSTAGRAM_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-right-1 margin-top-1 fab fa-instagram"></i></a>
-				<a href="<?php echo esc_html( get_theme_mod( TWITTER_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-twitter"></i></a>
-				<a href="<?php echo esc_html( get_theme_mod( FACEBOOK_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-facebook"></i></a>
-				<a href="<?php echo esc_html( get_theme_mod( YOUTUBE_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-youtube"></i></a>
-				<a href="<?php echo esc_html( get_theme_mod( VIMEO_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-vimeo"></i></a>
+				<?php if ( get_theme_mod( INSTAGRAM_SETTINGS ) !== '' ) : ?><a href="<?php echo esc_html( get_theme_mod( INSTAGRAM_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-right-1 margin-top-1 fab fa-instagram"></i></a><?php endif; ?>
+				<?php if ( get_theme_mod( TWITTER_SETTINGS ) !== '' ) : ?><a href="<?php echo esc_html( get_theme_mod( TWITTER_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-twitter"></i></a><?php endif; ?>
+				<?php if ( get_theme_mod( FACEBOOK_SETTINGS ) !== '' ) : ?><a href="<?php echo esc_html( get_theme_mod( FACEBOOK_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-facebook"></i></a><?php endif; ?>
+				<?php if ( get_theme_mod( YOUTUBE_SETTINGS ) !== '' ) : ?><a href="<?php echo esc_html( get_theme_mod( YOUTUBE_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-youtube"></i></a><?php endif; ?>
+				<?php if ( get_theme_mod( VIMEO_SETTINGS ) !== '' ) : ?><a href="<?php echo esc_html( get_theme_mod( VIMEO_SETTINGS ) ); ?>"><i class="mobile-social-icon margin-left-1 margin-right-1 margin-top-1 fab fa-vimeo"></i></a><?php endif; ?>
 			</div>
 		</div>
 	</div>
