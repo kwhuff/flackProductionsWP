@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-top: 0 !important;
-	margin-top: rem-calc(-25);
+	margin-top: rem-calc(-15);
 
 	a {
 		color: black !important;
@@ -12,4 +12,12 @@
 
 .contact-info {
 	font-size: rem-calc(25);
+
+	.contact-logo {
+		margin-bottom: rem-calc(-40);
+
+		@include breakpoint(small down) {
+			margin-bottom: rem-calc(-20);
+		}
+	}
 }
